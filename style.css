@@ -1,0 +1,22 @@
+/* body{direction: rtl;}
+.text1{font-size: 0px; border: 1px black; background-color: grey; margin: 0%;}
+.text2{font-size: 0px; border: 1px black; background-color: grey; margin: 0%;}
+
+
+.photo:hover .text1{
+font-size: 60px;
+}
+
+.text1:hover{background-color: rgba(128, 128, 128, 0.529);}
+.text1:hover .text2{
+    font-size: 60px;
+}
+
+.text2:hover{background-color: rgba(128, 128, 128, 0.529);} */
+
+
+.tooltip{display: none;}
+
+#tooltip-container:hover .tooltip{
+    display: block;
+}
