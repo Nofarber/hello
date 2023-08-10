@@ -1,4 +1,4 @@
-/* body{direction: rtl;}
+/* /* /* body{direction: rtl;}
 .text1{font-size: 0px; border: 1px black; background-color: grey; margin: 0%;}
 .text2{font-size: 0px; border: 1px black; background-color: grey; margin: 0%;}
 
@@ -12,11 +12,497 @@ font-size: 60px;
     font-size: 60px;
 }
 
-.text2:hover{background-color: rgba(128, 128, 128, 0.529);} */
+.text2:hover{background-color: rgba(128, 128, 128, 0.529);} 
 
 
 .tooltip{display: none;}
 
 #tooltip-container:hover .tooltip{
     display: block;
+} 
+
+
+
+
+.pic-container{
+    margin-top: 5vh;
 }
+.single-pic{
+    
+    height: 16rem;
+    width: 12rem;
+    border: 0.2rem gray solid;
+    border-radius: 10%;
+    margin: 10vmax;
+    align-items: baseline;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size:cover;
+}
+
+.title-property{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 100%;
+    margin-left: 10%;
+}
+
+.title{
+    padding-left: 10%;
+    padding-top: 65%;
+    padding-bottom:15%;
+    width: 90%;
+    height: 10%;
+    text-align:left;
+    border: 5% grey solid;
+}
+
+
+#st-pic-container{
+    background-image: url(https://www.akc.org/wp-content/themes/akc/component-library/assets/img/welcome.jpg);     
+}
+
+#nd-pic-container{
+    background-image: url(https://img.freepik.com/free-photo/red-white-cat-i-white-studio_155003-13189.jpg?w=2000);   
+}
+
+#rd-pic-container{
+    background-image: url(https://qph.cf2.quoracdn.net/main-qimg-b148f5e6c704cca552ce2ff746dd2f41.webp);
+}
+
+@media only screen and (max-width:768px) {
+    .single-pic{
+        height: 12rem;
+        width: 9rem;
+    }
+    
+} */
+
+#allcards{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#heading{
+    background-color: rgb(37, 34, 39);
+    position: static;
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height:14vh;
+    font-size: 1.5*var(--size-pro);
+    width: 100vw;
+    z-index: +9;
+
+}
+
+#storename{
+    margin-left: 2vmax;
+    font-size: 6vh;
+    z-index: +1;
+    width: 80%;
+}
+
+#footer {
+    position: static;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    text-decoration: none;
+    background-color:  rgb(37, 34, 39);
+    font-size: 30px;
+    text-align: center;
+    border: 7.5px black double;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    margin-top: 2.5vh;
+    margin-bottom: 0%;
+    width: 100vw;
+ }
+
+ .footer-pic{
+    height: 3vw;
+    width: 3vw;
+    text-align: center;
+    filter: grayscale(100%);
+    transition-duration: 0.6s;
+}
+
+.footer-pic:hover{
+    scale: 120%;
+    filter: grayscale(0%);
+}
+
+#footertxt{
+    margin: 7px; 
+    text-decoration: none; 
+    color: whitesmoke;
+    font-size: 3vw;
+}
+
+.logo{
+    height: 90%;
+    background:transparent;
+    margin-left: 4vh;
+}
+
+#tooltip{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background-color: rgb(37, 34, 39);
+    margin: 0%;
+    z-index: +21; 
+    width: 100vw;
+    position: sticky;
+    top: 0%;
+    left: 0px;
+    height: 4.2vmax;
+    font-size: 45px;
+    color: whitesmoke;
+    overflow: auto;
+    
+}
+
+#tooltipmain{
+    font-size: 3vmax;
+    margin-left: 5vmax;
+    transition-duration: 0.7s;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    border: 0% black solid;
+    border-radius: 40%;
+}
+
+.tooltipsub{
+    opacity: 0%;
+    margin-left: 5vmax;
+    transition-duration: 0.7s;
+    border: 0% black solid;
+    border-radius: 40%;
+}
+
+.tooltip-a-sub{
+    display: flex;
+    justify-content: center;
+    font-size: 3vmax;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    min-width: 100%;
+    min-height: 100%;
+    transform: rotateX(180deg);
+    filter: grayscale(100%) brightness(60%) blur(5px);
+  }
+
+  .teamstack{
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    background-color: rgba(128, 128, 128, 0.407);
+    text-align: center ;
+    margin: 0%;
+    width:100vw;
+
+  }
+
+  #lakerbg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(110, 7, 151, 0.5), rgba(255, 255, 0, 0.487), rgba(255, 255, 0, 0.507), rgba(0, 0, 0, 0));
+    width: 100vw;
+
+  }
+  #bucksbg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(211, 211, 211, 0.503), rgba(0, 100, 0, 0.497), rgba(0, 100, 0, 0.497), rgba(0, 0, 0, 0));
+    width: 100vw;
+
+  }
+  #warriorsbg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 217, 0, 0.49), rgba(0, 0, 255, 0.496) ,rgba(0, 0, 255, 0.496), rgba(0, 0, 0, 0));
+    width: 100vw;
+
+  }
+
+  .stackbg{
+    height: 280px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+  }
+
+  #break{height: 20px;}
+
+
+  .card{
+    height: 100%;
+  }
+
+
+.ovr-position{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    height: 100%;
+    padding-left: 5%;
+    padding-top: 5%;     
+    font-size: 100%;
+}
+
+.ovr{
+    height: 30%;
+    width: 30%;
+    font-size: 30px; 
+}
+
+.position{  
+    width: 20%;
+    height:20%;
+    font-size:20px;
+    border-top: 2% gold solid;
+    width: fit-content;
+}
+
+.plrportrait{
+    display: flex;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gold;
+    height: 70%;
+    width: 100%;
+    background-image: url(https://cdn.nba.com/headshots/nba/latest/260x190/1628389.png);
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size:cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blackfade{
+    height: 20%;
+    background-image: linear-gradient( rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+
+.plrname{
+    text-align: center;
+    color: gold;
+    height: 10%;
+    background-color: black;
+    font-size: 20px;
+}
+
+
+.country-team{
+    background-color: rgb(0, 0, 0);
+    height: 20%;
+    display: grid;
+    grid-template-columns: 49.6% 0.8% 49.6%;
+    font-size: 14px;
+    color: gold;
+    text-align: center;
+}
+
+.country-team-divide{
+    background-color: gold;
+}
+
+.plrname-back{
+    height: 20%;
+    margin-top: 5%;
+    margin-bottom:  5%;
+    font-size: 20px;
+}
+
+.plr-data{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    height: 60%;
+    width: 86%;
+    padding-left: 7%;
+    padding-left: 7%;
+}
+
+.plr-data p{
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    font-size: 14px;
+}
+
+
+.flip-card {
+    background-color: transparent;
+    height: 200px;
+    aspect-ratio: 3 / 4;
+    perspective: 1000px; 
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+   .flip-card:active .flip-card-inner {
+    transform: rotateY(180deg);
+  } 
+  
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  
+  .flip-card-front {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    background-position: 0% 50%;
+    color: black;
+    border: 5px gold solid;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+  }
+  
+  
+  .flip-card-back {
+    scale: 120%;
+    color: goldenrod;
+    border: 5px goldenrod solid;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+    transform: rotateY(180deg);
+    text-align: center;
+    background-image: linear-gradient( gold,gold, gold, goldenrod);
+    
+  }
+
+.flip-card-front:hover{
+    scale: 120%;
+    transition-duration: 0.8S;
+    animation: gradient 6s linear infinite;
+}  
+
+
+
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+        bottom: 0%;
+        transform: rotateY(0deg);
+
+	}
+    30%{
+        transform: rotateY(20deg);
+    }
+	50% {
+		background-position: 100% 50%;
+        bottom: 2vmax;
+	}
+    80%{
+        transform: rotateY(-20deg);
+    }
+	100% {
+		background-position: 0% 50%;
+        bottom: 0%;
+        transform: rotateY(0deg);
+	}}
+
+
+    #tooltip:hover .tooltipsub{
+        opacity: 40%;
+    }
+
+    .tooltipsub:hover{
+        border: 5%;
+        scale: 120%;
+        box-shadow: black;
+        opacity: 100% !important; 
+    }
+
+    #tooltipmain:hover{
+        border: 5%;
+        scale: 120%;
+        box-shadow: black;
+    }
+
+ 
+    .stack{
+        height: 70%;
+        width: auto;
+        display: grid;
+        grid-template-columns:  30px 30px 30px 150px;
+        
+        align-items: center;
+        transition-duration: 1s;
+        margin-left: 5vmax;
+        margin-top: 30px;
+    }
+
+    .stack .flip-card{
+        position: relative;
+    }
+
+    .stack:hover{
+        grid-template-columns: 180px  180px  180px  180px;
+    }
+
+
+
+
+#lebron .plrportrait{
+    background-image: url(https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png);
+}
+#austin .plrportrait{
+    background-image: url(https://cdn.nba.com/headshots/nba/latest/1040x760/1630559.png);
+}
+#davis .plrportrait{
+    background-image: url(https://cdn.nba.com/headshots/nba/latest/1040x760/203076.png);
+}
+#green .plrportrait{
+    background-image: url(https://cdn.nba.com/headshots/nba/latest/1040x760/203110.png);
+}
+#loony .plrportrait{
+    background-image: url(https://cdn.nba.com/headshots/nba/latest/1040x760/1626172.png);
+}
+#thompson .plrportrait{
+    background-image: url(https://cdn.nba.com/headshots/nba/latest/1040x760/202691.png);
+}
+#curry .plrportrait{
+    background-image: url(https://cdn.nba.com/headshots/nba/latest/1040x760/201939.png);
+}
+#eric .plrportrait{
+    background-image: url(https://cdn.nba.com/headshots/nba/latest/1040x760/202339.png);
+}
+#lopez .plrportrait{
+    background-image: url(https://cdn.nba.com/headshots/nba/latest/1040x760/201572.png);
+}
+#kris .plrportrait{
+    background-image: url(https://cdn.nba.com/headshots/nba/latest/1040x760/203114.png);
+}
+#giannis .plrportrait{
+    background-image: url(https://cdn.nba.com/headshots/nba/latest/1040x760/203507.png);
+}
+
+

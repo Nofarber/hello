@@ -1,0 +1,106 @@
+#heading{
+    background-color: rgb(37, 34, 39);
+    position: static;
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height:14vh;
+    font-size: 1.5*var(--size-pro);
+    width: 100vw;
+    z-index: +9;
+
+}
+
+#storename{
+    margin-left: 2vmax;
+    font-size: 6vh;
+    z-index: +1;
+    width: 80%;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    text-decoration: none;
+    background-color:  rgb(37, 34, 39);
+    text-align: center;
+    margin-top: 1vmax;
+    margin-bottom: 0%;
+    width: 100vw;
+    height: 4*var(--size-pro);
+ }
+
+ .footer-pic{
+    height: 2vmax;
+    width: 2vmax;
+    text-align: center;
+    filter: grayscale(100%);
+    transition-duration: 0.6s;
+    margin-left: 0.5vmax;
+    margin-right: 0.5vmax;
+}
+
+.footer-pic:hover{
+    scale: 120%;
+    filter: grayscale(0%);
+}
+
+.logo{
+    height: 90%;
+    background:transparent;
+    margin-left: 1vh;
+    z-index: +2;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    min-width: 100%;
+    min-height: 100%;
+    transform: rotateX(180deg);
+    filter: grayscale(100%) brightness(60%) blur(5px);
+  }
+
+  #content{
+
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #content span{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 8vmax;
+    margin-bottom: 10%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    font-size: 2vmax;
+    border: transparent;
+    box-shadow: 0.5vmax 0.5vmax 1vmax rgba(0,0,0,0.4);
+    background: dodgerblue;
+    color: white;
+    border-radius: 10%;
+    padding: 15%;
+   }
+   
+   button:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+   }
